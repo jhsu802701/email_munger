@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/jhsu802701/email_munger.svg?branch=master)](https://travis-ci.org/jhsu802701/email_munger)
 [![Code Climate](https://codeclimate.com/github/jhsu802701/email_munger/badges/gpa.svg)](https://codeclimate.com/github/jhsu802701/email_munger)
 [![Test Coverage](https://codeclimate.com/github/jhsu802701/email_munger/badges/coverage.svg)](https://codeclimate.com/github/jhsu802701/email_munger/coverage)
+[![security](https://hakiri.io/github/jhsu802701/email_munger/master.svg)](https://hakiri.io/github/jhsu802701/email_munger/master)
 
 # EmailMunger
 
