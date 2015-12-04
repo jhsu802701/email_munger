@@ -4,3 +4,6 @@ BADGES for README.md
 * Travis CI: https://travis-ci.org/ (SPECIAL NOTE: There are incorrect procedures out there.  You must go into your Travis CI settings and add the Code Climate repository token as an environment variable.)
 * Code Climate: https://codeclimate.com/
 * Hakiri: https://hakiri.io/
+
+Convert every character in an email address into an HTML/ASCII code.
+Put the "@" and "." in the email address inside italics (<i> tag).
