@@ -17,6 +17,6 @@ describe EmailMunger do
     str4 = '&#51;&#52;&#53;&#54;&#55;&#56;&#57;<i>&#64;</i>&#101;&#120;'
     str5 = '&#97;&#109;&#112;&#108;&#101;<i>&#46;</i>&#99;&#111;&#109;'
     str_output = str1 + str2 + str3 + str4 + str5
-    expect(EmailMunger.decode(str_input)).to eq(str_output)
+    expect(EmailMunger.encode(str_input)).to eq(str_output)
   end
 end

@@ -2,7 +2,7 @@ require 'email_munger/version'
 
 #
 module EmailMunger
-  def self.decode(str_input)
+  def self.encode(str_input)
     str_output = ''
     str_input.each_char do |c|
       str_c = '&#' + c.ord.to_s + ';'
