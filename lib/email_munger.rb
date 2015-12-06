@@ -6,6 +6,7 @@ module EmailMunger
     str_output = ''
     str_input.each_char { |c|
       str_c = '&#' + c.ord.to_s + ';'
+      str_c = "<i>#{str_c}</i>"if c == '@' || c == '.'
       str_output += str_c
     }
     return str_output
