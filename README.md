@@ -6,9 +6,8 @@
 
 # EmailMunger
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/email_munger`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Use the EmailMunger gem in your Rails app to encode displayed email addresses on web pages so that they are much less likely to be harvested by bots and bombarded with spam, yet still visible in web browsers.  Each character in an email address is converted into its HTML5 UTF-8 character code.  Additionally, the '@' and '.' characters are presented in italics.  For example, the address
+`abcdefghijklmnopqrstuvwxyz0123456789@example.com` becomes `&#97;&#98;&#99;&#100;&#101;&#102;&#103;&#104;&#105;&#106;&#107;&#108;&#109;&#110;&#111;&#112;&#113;&#114;&#115;&#116;&#117;&#118;&#119;&#120;&#121;&#122;&#48;&#49;&#50;&#51;&#52;&#53;&#54;&#55;&#56;&#57;<i>&#64;</i>&#101;&#120;&#97;&#109;&#112;&#108;&#101;<i>&#46;</i>&#99;&#111;&#109;`
 
 ## Installation
 
@@ -28,7 +27,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To encode the email address abcdefghijklmnopqrstuvwxyz0123456789@example.com in a Ruby environment, enter the following command:
+`EmailMunger.encode('abcdefghijklmnopqrstuvwxyz0123456789@example.com')`
+
+The result is:
+`&#97;&#98;&#99;&#100;&#101;&#102;&#103;&#104;&#105;&#106;&#107;&#108;&#109;&#110;&#111;&#112;&#113;&#114;&#115;&#116;&#117;&#118;&#119;&#120;&#121;&#122;&#48;&#49;&#50;&#51;&#52;&#53;&#54;&#55;&#56;&#57;<i>&#64;</i>&#101;&#120;&#97;&#109;&#112;&#108;&#101;<i>&#46;</i>&#99;&#111;&#109;`
 
 ## Development
 
